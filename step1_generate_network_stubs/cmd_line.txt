@@ -1,0 +1,1 @@
+cd MTK_RR_003 && /path/to/rosetta/bin/hbnet_gen_and_dock_V2.ompstatic.linuxgccrelease @../flags/flags.txt -s MTK_RR_003.pdb

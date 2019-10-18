@@ -1,0 +1,31 @@
+#############(Change log)#############################
+#(2017-07-18) cleaned. Xml run
+
+-database /gscratch/baker/kipnis/rosetta_BW/database
+-beta_nov16
+-match:lig_name LG2
+
+-ex1:level 6 #1=+/-1sd(3); 2=+/-0.5sd(3); 3=+/-1,2sd(5); 4=+/-0.5,1sd(5); 5=+/-0.5,1,1.5,2sd(9); 6=+/-0.33,0.67,1(7); 7=+/-0.25,0.5,0.75,1.0,1.25,1.5(13)
+-ex2:level 6
+-ex3:level 6
+-ex4:level 6
+-ex1aro:level 6
+-ex2aro:level 6
+-bump_tolerance   0.6
+
+-euclid_bin_size  0.5
+-euler_bin_size  10.0
+
+-dynamic_grid_refinement
+
+-no_optH false 
+-use_input_sc
+
+-match:output_format PDB
+-consolidate_matches
+-output_matches_per_group 10
+
+#########################################################
+-overwrite
+-out:levels protocols.rosetta_scripts.RosettaScriptsParser:warning
+-out:file:output_virtual

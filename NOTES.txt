@@ -1,0 +1,3 @@
+Follow steps 1-4 to recapitulate the workflow from generated networks to matching in scaffolds. See NOES.txt in each subdirectory for instructions.
+
+HBNetGen executable available upon request.

@@ -1,0 +1,3 @@
+#to be run in PyMOL with stubs pdb file loaded
+
+run enzdes_constraints_writer_xml_format.py

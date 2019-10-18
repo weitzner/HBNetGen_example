@@ -1,0 +1,2644 @@
+core.init: Rosetta version unknown:54684c17561e72b8dbee2da5d9b513ceb345b14c 2017-03-07 22:52:44 -0800 from git@github.com:RosettaCommons/main.git
+core.init: command: /gscratch/baker/kipnis/rosetta_BW/rosetta_source/bin/rosetta_scripts.static.linuxgccrelease @match.flags.txt -beta_nov16 -extra_res_fa LYM.params -parser:protocol matcher_xml_cst.xml -preserve_header true -s inp_0337_0008.pdb -extra_res_fa RA2_RS_rotlib.params -match:lig_name LG2 -out:prefix matcher_ -nstruct 1
+core.init: 'RNG device' seed mode, using '/dev/urandom', seed=515312156 seed_offset=0 real_seed=515312156
+core.init.random: RandomGenerator:init: Normal mode, seed=515312156 RG_type=mt19937
+protocols.jd2.PDBJobInputter: Instantiate PDBJobInputter
+protocols.jd2.PDBJobInputter: PDBJobInputter::fill_jobs
+protocols.jd2.PDBJobInputter: pushed inp_0337_0008.pdb nstruct index 1
+protocols.evaluation.ChiWellRmsdEvaluatorCreator: Evaluation Creator active ... 
+protocols.jd2.JobDistributor: Parser is present.  Input mover will be overwritten with whatever the parser creates.
+protocols.jd2.PDBJobInputter: PDBJobInputter::pose_from_job
+protocols.jd2.PDBJobInputter: filling pose from PDB inp_0337_0008.pdb
+core.chemical: WARNING: Ignoring line starting with 'stidine,' when parsing topology file.
+core.chemical.GlobalResidueTypeSet: Finished initializing fa_standard residue type set.  Created 547 residue types
+core.chemical.GlobalResidueTypeSet: Total time to initialize 0.73 seconds.
+core.import_pose.import_pose: File 'inp_0337_0008.pdb' automatically determined to be of type PDB
+core.io.pose_from_sfr.PoseFromSFRBuilder: [ WARNING ] discarding 1 atoms at position 1 in file inp_0337_0008.pdb. Best match rsd_type:  PRO:NtermProteinFull
+core.io.pose_from_sfr.PoseFromSFRBuilder: [ WARNING ] can't find pose atom for file-residue 1 atom CAV  (trying to store temperature in PDBInfo)
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: beta_nov16.wts
+core.scoring.etable: Starting energy table calculation
+core.scoring.etable: smooth_etable: changing atr/rep split to bottom of energy well
+core.scoring.etable: smooth_etable: spline smoothing lj etables (maxdis = 6)
+core.scoring.etable: smooth_etable: spline smoothing solvation etables (max_dis = 6)
+core.scoring.etable: Finished calculating energy tables.
+basic.io.database: Database file opened: scoring/score_functions/elec_cp_reps.dat
+core.scoring.elec.util: Read 40 countpair representative atoms
+basic.io.database: Database file opened: scoring/score_functions/hbonds/sp2_elec_params/HBPoly1D.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/sp2_elec_params/HBFadeIntervals.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/sp2_elec_params/HBEval.csv
+basic.io.database: Database file opened: scoring/score_functions/rama/fd_beta_nov2016//all.ramaProb
+basic.io.database: Database file opened: scoring/score_functions/rama/fd_beta_nov2016//prepro.ramaProb
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.all.txt
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.gly.txt
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.pro.txt
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.valile.txt
+basic.io.database: Database file opened: scoring/score_functions/P_AA_pp/P_AA
+basic.io.database: Database file opened: scoring/score_functions/P_AA_pp/P_AA_n
+core.scoring.P_AA: shapovalov_lib::shap_p_aa_pp_smooth_level of 1( aka low_smooth ) got activated.
+basic.io.database: Database file opened: scoring/score_functions/P_AA_pp/shapovalov/10deg/kappa131/a20.prop
+basic.io.database: Database file opened: scoring/score_functions/bondlength_bondangle/hydroxyl_torsion_preference.txt
+core.pack.dunbrack.RotamerLibrary: shapovalov_lib_fixes_enable option is true.
+core.pack.dunbrack.RotamerLibrary: Binary rotamer library selected: /gscratch/baker/kipnis/rosetta_BW/database/rotamer/beta_nov2016/Dunbrack10.lib.bin
+core.pack.dunbrack.RotamerLibrary: Using Dunbrack library binary file '/gscratch/baker/kipnis/rosetta_BW/database/rotamer/beta_nov2016/Dunbrack10.lib.bin'.
+core.pack.dunbrack.RotamerLibrary: Dunbrack 2010 library took 0.15 seconds to load from binary
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 517 rotamers at 116 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.interaction_graph.interaction_graph_factory: IG: 434244 bytes
+core.io.pdb.file_data: [ OPT-H WARNING ] proton chi angle change: chidev=    10.307 chino=  2 position:   16 THR THR
+core.io.pdb.file_data: [ OPT-H WARNING ] proton chi angle change: chidev=     0.523 chino=  2 position:   17 SER SER
+core.io.pdb.file_data: [ OPT-H WARNING ] proton chi angle change: chidev=     5.287 chino=  2 position:   21 THR THR
+core.io.pdb.file_data: [ OPT-H WARNING ] proton chi angle change: chidev=     0.203 chino=  2 position:   26 SER SER
+core.io.pdb.file_data: [ OPT-H WARNING ] proton chi angle change: chidev=    10.939 chino=  2 position:   33 THR THR
+core.io.pdb.file_data: [ OPT-H WARNING ] proton chi angle change: chidev=     6.642 chino=  2 position:   35 THR THR
+core.io.pdb.file_data: [ OPT-H WARNING ] proton chi angle change: chidev=    19.107 chino=  2 position:   36 THR THR
+core.io.pdb.file_data: [ OPT-H WARNING ] proton chi angle change: chidev=     3.520 chino=  2 position:   42 SER SER
+core.io.pdb.file_data: [ OPT-H WARNING ] proton chi angle change: chidev=    12.690 chino=  2 position:   44 THR THR
+core.io.pdb.file_data: [ OPT-H WARNING ] proton chi angle change: chidev=    11.229 chino=  2 position:   50 THR THR
+core.io.pdb.file_data: [ OPT-H WARNING ] proton chi angle change: chidev=    20.307 chino=  2 position:   61 SER SER
+core.io.pdb.file_data: [ OPT-H WARNING ] proton chi angle change: chidev=    85.926 chino=  2 position:   63 THR THR
+core.io.pdb.file_data: [ OPT-H WARNING ] proton chi angle change: chidev=     2.601 chino=  2 position:   68 SER SER
+core.io.pdb.file_data: [ OPT-H WARNING ] proton chi angle change: chidev=     5.526 chino=  2 position:   70 THR THR
+core.io.pdb.file_data: [ OPT-H WARNING ] proton chi angle change: chidev=   160.337 chino=  3 position:   72 TYR TYR
+core.io.pdb.file_data: [ OPT-H WARNING ] proton chi angle change: chidev=    11.907 chino=  2 position:   75 SER SER
+core.io.pdb.file_data: [ OPT-H WARNING ] proton chi angle change: chidev=    14.383 chino=  2 position:   76 THR THR
+core.io.pdb.file_data: [ OPT-H WARNING ] proton chi angle change: chidev=     0.464 chino=  2 position:   85 SER SER
+core.io.pdb.file_data: [ OPT-H WARNING ] proton chi angle change: chidev=    14.203 chino=  2 position:   92 SER SER
+core.io.pdb.file_data: [ OPT-H WARNING ] proton chi angle change: chidev=     6.287 chino=  2 position:   94 THR THR
+core.io.pdb.file_data: [ OPT-H WARNING ] proton chi angle change: chidev=     4.482 chino=  2 position:  102 SER SER
+core.io.pdb.file_data: [ OPT-H WARNING ] proton chi angle change: chidev=    17.610 chino=  2 position:  103 SER SER
+core.io.pdb.file_data: [ OPT-H WARNING ] proton chi angle change: chidev=     4.061 chino=  2 position:  107 SER SER
+core.io.pdb.file_data: [ OPT-H WARNING ] proton chi angle change: chidev=    10.255 chino=  2 position:  111 THR THR
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: beta_nov16.wts
+core.scoring.ramachandran: shapovalov_lib::shap_rama_smooth_level of 4( aka highest_smooth ) got activated.
+basic.io.database: Database file opened: scoring/score_functions/rama/shapovalov/kappa25/all.ramaProb
+basic.io.database: Database file opened: scoring/score_functions/PairEPotential/pdb_pair_stats_fine
+core.scoring.etable: Using alternate parameters: LJ_RADIUS_SOFT in Etable construction.
+core.scoring.etable: Starting energy table calculation
+core.scoring.etable: smooth_etable: changing atr/rep split to bottom of energy well
+core.scoring.etable: smooth_etable: spline smoothing lj etables (maxdis = 6)
+core.scoring.etable: smooth_etable: spline smoothing solvation etables (max_dis = 6)
+core.scoring.etable: Finished calculating energy tables.
+basic.io.database: Database file opened: scoring/score_functions/InterchainPotential/interchain_env_log.txt
+basic.io.database: Database file opened: scoring/score_functions/InterchainPotential/interchain_pair_log.txt
+basic.io.database: Database file opened: scoring/score_functions/EnvPairPotential/env_log.txt
+basic.io.database: Database file opened: scoring/score_functions/EnvPairPotential/cbeta_den.txt
+basic.io.database: Database file opened: scoring/score_functions/EnvPairPotential/pair_log.txt
+basic.io.database: Database file opened: scoring/score_functions/EnvPairPotential/cenpack_log.txt
+protocols.jd2.parser.ScoreFunctionLoader: defined score function "FULL_hard" with weights "beta_nov16_cst.wts"
+setting FULL_hard weight atom_pair_constraint to 1
+setting FULL_hard weight angle_constraint to 1
+setting FULL_hard weight dihedral_constraint to 1
+setting FULL_hard weight coordinate_constraint to 1
+setting FULL_hard weight aa_composition to 1
+core.select.residue_selector.LayerSelector: Setting LayerSelector to use sidechain neighbors to determine burial.
+core.select.residue_selector.LayerSelector: Set cutoffs for core and surface to 5.2 and 2, respectively, in LayerSelector.
+core.select.residue_selector.LayerSelector: Setting core=false boundary=true surface=false in LayerSelector.
+core.select.residue_selector.LayerSelector: Setting LayerSelector to use sidechain neighbors to determine burial.
+core.select.residue_selector.LayerSelector: Set cutoffs for core and surface to 4.9 and 2.3, respectively, in LayerSelector.
+protocols.jd2.parser.TaskOperationLoader: Defined TaskOperation named "init" of type InitializeFromCommandline
+protocols.match.MatcherMover: Obtained residue selectors for 4 geomcsts.
+protocols.rosetta_scripts.ParsedProtocol: ParsedProtocol mover with the following movers and filters
+protocols.rosetta_scripts.ParsedProtocol: added mover "matcher" with filter "true_filter"
+protocols.jd2.PDBJobInputter: PDBJobInputter::pose_from_job
+protocols.jd2.PDBJobInputter: filling pose from saved copy inp_0337_0008.pdb
+protocols.rosetta_scripts.ParsedProtocol: =======================BEGIN MOVER MatcherMover - matcher=======================
+protocols.rosetta_scripts.MultiplePoseMover: Applying mover to pose: PGFADAAPGKWEIHMTSADGTRVQGSLEIQPRTPTTLEVRVSFTEEDGKTFVGQGHMEIKSPTKIQVSLTVYDPSTGGHEVMQVSGEIQFHSPTEMEMHVKSSDGKSMRGTLKRKP
+protocols.match.MatcherMover: Selecting orientation atoms:  C12  O1   C11
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: beta_nov16.wts
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: beta_nov16.wts
+protocols.match.MatcherMover: Residues for geomcst 1: [15, 23, 25, 43, 53, 55, 69, 84, 100, 108]
+protocols.match.MatcherMover: Residues for geomcst 2: [13, 15, 17, 23, 27, 39, 41, 51, 67, 69, 71, 84, 98, 100, 102, 106, 108]
+protocols.match.MatcherMover: Residues for geomcst 3: [13, 15, 17, 23, 27, 39, 41, 51, 67, 69, 71, 84, 98, 100, 102, 106, 108]
+protocols.match.MatcherMover: Residues for geomcst 4: [13, 15, 17, 23, 27, 39, 41, 51, 67, 69, 71, 84, 98, 100, 102, 106, 108]
+protocols.match.MatcherTask: WARNING WARNING WARNING: no grid file specified for option -grid_boundary. The bounding grid will be generated from the dimensions of the pose. This is experimental at the moment.
+protocols.match.MatcherTask: Bounding box lower corner set to (-15.641,-13.465,-39.089), upper corner set to to (12.351,23.311,-4.703).
+protocols.BumpGrid: Atom type CNH2 with ProbeRadius 5 = 1.65
+protocols.BumpGrid: Atom type COO with ProbeRadius 5 = 1.65
+protocols.BumpGrid: Atom type CH1 with ProbeRadius 6 = 1.75
+protocols.BumpGrid: Atom type CH2 with ProbeRadius 6 = 1.75
+protocols.BumpGrid: Atom type CH3 with ProbeRadius 6 = 1.75
+protocols.BumpGrid: Atom type aroC with ProbeRadius 6 = 1.75
+protocols.BumpGrid: Atom type Ntrp with ProbeRadius 4 = 1.55
+protocols.BumpGrid: Atom type Nhis with ProbeRadius 4 = 1.55
+protocols.BumpGrid: Atom type NH2O with ProbeRadius 4 = 1.55
+protocols.BumpGrid: Atom type Nlys with ProbeRadius 4 = 1.55
+protocols.BumpGrid: Atom type Narg with ProbeRadius 4 = 1.55
+protocols.BumpGrid: Atom type Npro with ProbeRadius 4 = 1.55
+protocols.BumpGrid: Atom type OH with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type ONH2 with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type OOC with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Oaro with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Oet2 with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Oet3 with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type S with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type Nbb with ProbeRadius 4 = 1.55
+protocols.BumpGrid: Atom type CAbb with ProbeRadius 6 = 1.75
+protocols.BumpGrid: Atom type CObb with ProbeRadius 5 = 1.65
+protocols.BumpGrid: Atom type OCbb with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Phos with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type Pbb with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type Hpol with ProbeRadius 1 = 1
+protocols.BumpGrid: Atom type Hapo with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type Haro with ProbeRadius 1 = 1
+protocols.BumpGrid: Atom type HNbb with ProbeRadius 1 = 1
+protocols.BumpGrid: Atom type HOH with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Bsp2 with ProbeRadius 6 = 1.75
+protocols.BumpGrid: Atom type F with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Cl with ProbeRadius 6 = 1.75
+protocols.BumpGrid: Atom type Br with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type I with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type Zn2p with ProbeRadius 0 = 0
+protocols.BumpGrid: Atom type Co2p with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type Cu2p with ProbeRadius 0 = 0
+protocols.BumpGrid: Atom type Fe2p with ProbeRadius 0 = 0
+protocols.BumpGrid: Atom type Fe3p with ProbeRadius 0 = 0
+protocols.BumpGrid: Atom type Mg2p with ProbeRadius 1 = 1
+protocols.BumpGrid: Atom type Ca2p with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type Pha with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type OPha with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type OHha with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Hha with ProbeRadius 1 = 1
+protocols.BumpGrid: Atom type CO3 with ProbeRadius 6 = 1.75
+protocols.BumpGrid: Atom type OC3 with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Si with ProbeRadius 4 = 1.55
+protocols.BumpGrid: Atom type OSi with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Oice with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Hice with ProbeRadius 1 = 1
+protocols.BumpGrid: Atom type Na1p with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type K1p with ProbeRadius 4 = 1.55
+protocols.BumpGrid: Atom type He with ProbeRadius 1 = 1
+protocols.BumpGrid: Atom type Li with ProbeRadius 1 = 1
+protocols.BumpGrid: Atom type Be with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type Ne with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Al with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type Ar with ProbeRadius 5 = 1.65
+protocols.BumpGrid: Atom type Sc with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Ti with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type V with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type Cr with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type Mn with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type Ni with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type Ga with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type Ge with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type As with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type Se with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type Kr with ProbeRadius 6 = 1.75
+protocols.BumpGrid: Atom type Rb with ProbeRadius 6 = 1.75
+protocols.BumpGrid: Atom type Sr with ProbeRadius 4 = 1.55
+protocols.BumpGrid: Atom type Y with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Zr with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type Nb with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Mo with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type Tc with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type Ru with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type Rh with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type Pd with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type Ag with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Cd with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type In with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type Sn with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type Sb with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type Te with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type Xe with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type Cs with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type Ba with ProbeRadius 4 = 1.55
+protocols.BumpGrid: Atom type La with ProbeRadius 4 = 1.55
+protocols.BumpGrid: Atom type Ce with ProbeRadius 4 = 1.55
+protocols.BumpGrid: Atom type Pr with ProbeRadius 4 = 1.55
+protocols.BumpGrid: Atom type Nd with ProbeRadius 4 = 1.55
+protocols.BumpGrid: Atom type Pm with ProbeRadius 4 = 1.55
+protocols.BumpGrid: Atom type Sm with ProbeRadius 4 = 1.55
+protocols.BumpGrid: Atom type Eu with ProbeRadius 4 = 1.55
+protocols.BumpGrid: Atom type Gd with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Tb with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Dy with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Ho with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Er with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Tm with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Yb with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Lu with ProbeRadius 4 = 1.55
+protocols.BumpGrid: Atom type Hf with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type Ta with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type W with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type Re with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type Os with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type Ir with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type Pt with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type Au with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Hg with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type Tl with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type Pb with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type Bi with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type Po with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type At with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type Rn with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type Fr with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type Ra with ProbeRadius 4 = 1.55
+protocols.BumpGrid: Atom type Ac with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Th with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Pa with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type U with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Np with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Pu with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Am with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Cm with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Bk with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Cf with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Es with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Fm with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Md with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type No with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Lr with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type SUCK with ProbeRadius 0 = 0
+protocols.BumpGrid: Atom type REPL with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type REPLS with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type HREPS with ProbeRadius 0 = 0
+protocols.BumpGrid: Atom type VIRT with ProbeRadius 0 = 0
+protocols.BumpGrid: Atom type MPct with ProbeRadius 0 = 0
+protocols.BumpGrid: Atom type MPnm with ProbeRadius 0 = 0
+protocols.BumpGrid: Atom type MPdp with ProbeRadius 0 = 0
+protocols.BumpGrid: Atom type MPtk with ProbeRadius 0 = 0
+protocols.BumpGrid: Atom type CH0 with ProbeRadius 6 = 1.75
+protocols.BumpGrid: Atom type HS with ProbeRadius 1 = 1
+protocols.BumpGrid: Atom type NtrR with ProbeRadius 4 = 1.55
+protocols.BumpGrid: Atom type SH1 with ProbeRadius 7 = 1.85
+protocols.match.Matcher: Set occupied space bounding box: Lower (-15.641, -13.465, -39.089) Upper (12.351, 23.311, -4.703)
+protocols.match.Matcher: Matcher::initialize_from_file: n geometric constraints: 4
+protocols.match.Matcher: Begin constraint1
+protocols.match.Matcher:  Upstream residue type LYS for geometric constraint #1
+protocols.match.Matcher:   Did not locate ALGORITHM_INFO:: match for constraint 1
+protocols.match.Matcher:    LYS LG2
+protocols.match.Matcher:     U3: 2HZ  U2:  CE  U1:  NZ  D1:  C12 D2:  C11 D3:  C13
+protocols.match.Matcher:      Adding Classical Match Algorithm with 251 explicit geometric samples
+protocols.match.downstream.LigandConformerBuilder: Initializing from residue LG2
+core.pack.rotamers.SingleLigandRotamerLibrary: Read in 20 rotamers from RA2_RS_0001.rotlib.pdb !
+protocols.match.downstream.LigandConformerBuilder: Found 20 rotamers for LG2
+protocols.match.downstream.LigandConformerBuilder: Idealizing ligand rotamers
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000471822 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000494635 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000396525 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000429994 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000475137 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000468508 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000483887 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000395302 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000418537 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000461005 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000406324 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000465939 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000460606 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000414038 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000499087 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000458576 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000491484 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000527371 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000396497 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000403691 All-Atom RMSD, 
+protocols.match.downstream.LigandConformerBuilder: Ligand conformers were split up into 1 match-redundant groups.
+protocols.match.Matcher: Begin constraint2
+protocols.match.Matcher:  Upstream residue type TYR for geometric constraint #2
+protocols.match.Matcher:   Did not locate ALGORITHM_INFO:: match for constraint 2
+protocols.match.Matcher:    TYR LG2
+protocols.match.Matcher:     U3:  HH  U2:  CZ  U1:  OH  D1:  C12 D2:  C11 D3:  C13
+protocols.match.Matcher:      Adding Classical Match Algorithm with 251 explicit geometric samples
+protocols.match.downstream.LigandConformerBuilder: Initializing from residue LG2
+protocols.match.downstream.LigandConformerBuilder: Found 20 rotamers for LG2
+protocols.match.downstream.LigandConformerBuilder: Idealizing ligand rotamers
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000471822 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000494635 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000396525 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000429994 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000475137 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000468508 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000483887 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000395302 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000418537 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000461005 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000406324 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000465939 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000460606 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000414038 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000499087 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000458576 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000491484 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000527371 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000396497 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000403691 All-Atom RMSD, 
+protocols.match.downstream.LigandConformerBuilder: Ligand conformers were split up into 1 match-redundant groups.
+protocols.match.Matcher: Begin constraint3
+protocols.match.Matcher:  Upstream residue type TYR for geometric constraint #3
+protocols.match.Matcher:   Did not locate ALGORITHM_INFO:: match for constraint 3
+protocols.match.Matcher:    TYR LG2
+protocols.match.Matcher:     U3:  HH  U2:  CZ  U1:  OH  D1:  C12 D2:  C11 D3:  C13
+protocols.match.Matcher:      Adding Classical Match Algorithm with 251 explicit geometric samples
+protocols.match.downstream.LigandConformerBuilder: Initializing from residue LG2
+protocols.match.downstream.LigandConformerBuilder: Found 20 rotamers for LG2
+protocols.match.downstream.LigandConformerBuilder: Idealizing ligand rotamers
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000471822 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000494635 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000396525 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000429994 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000475137 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000468508 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000483887 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000395302 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000418537 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000461005 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000406324 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000465939 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000460606 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000414038 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000499087 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000458576 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000491484 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000527371 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000396497 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000403691 All-Atom RMSD, 
+protocols.match.downstream.LigandConformerBuilder: Ligand conformers were split up into 1 match-redundant groups.
+protocols.match.Matcher: Begin constraint4
+protocols.match.Matcher:  Upstream residue type GLN for geometric constraint #4
+protocols.match.Matcher:   Did not locate ALGORITHM_INFO:: match for constraint 4
+protocols.match.Matcher:    GLN LG2
+protocols.match.Matcher:     U3: 1HE2 U2:  CD  U1:  OE1 D1:  C12 D2:  C11 D3:  C13
+protocols.match.Matcher:      Adding Classical Match Algorithm with 251 explicit geometric samples
+protocols.match.downstream.LigandConformerBuilder: Initializing from residue LG2
+protocols.match.downstream.LigandConformerBuilder: Found 20 rotamers for LG2
+protocols.match.downstream.LigandConformerBuilder: Idealizing ligand rotamers
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000471822 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000494635 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000396525 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000429994 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000475137 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000468508 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000483887 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000395302 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000418537 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000461005 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000406324 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000465939 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000460606 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000414038 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000499087 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000458576 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000491484 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000527371 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000396497 All-Atom RMSD, 
+protocols.idealize.IdealizeMover: total atompairs: 0
+protocols.idealize: lastjumpmin: 1
+protocols.idealize: premin:  (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.001     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: postmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)    1 Z    0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: pre-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: post-finalmin: (pos,rmsd,avg-bb,max-bb,avg-chi,max-chi,score)     0.000     -nan    0.000     -nan    0.000       0.000
+protocols.idealize: 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ pro_close                    0.500       0.000       0.000
+ dslf_ss_dst                  0.500       0.000       0.000
+ dslf_cs_ang                  2.000       0.000       0.000
+ coordinate_constraint        0.010       0.001       0.000
+---------------------------------------------------
+ Total weighted score:                        0.000
+protocols.idealize: 
+protocols.idealize.IdealizeMover: RMS between original pose and idealised pose: 0.000403691 All-Atom RMSD, 
+protocols.match.downstream.LigandConformerBuilder: Ligand conformers were split up into 1 match-redundant groups.
+protocols.match.output.ProcessorFactory: Matches will be consolidated before output.
+Created UpstreamCollisionFilter
+Created UpstreamDownstreamCollisionFilter
+protocols.match.Matcher: Initializing BumpGrids... 
+protocols.match.Matcher: ...done
+protocols.match.Matcher:  TIMING: Bump grids took 1.02 seconds to compute
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 12621456471485389172 downstream conformations at residue 15 and found 1965143 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 11650575204448036768 downstream conformations at residue 23 and found 3161399 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 5825287602224018384 downstream conformations at residue 25 and found 1596573 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 5825287602223970364 downstream conformations at residue 43 and found 3853714 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 15534100272597446384 downstream conformations at residue 53 and found 1665837 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 4854406335186665980 downstream conformations at residue 55 and found 1141439 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 970881267037256364 downstream conformations at residue 69 and found 1364528 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 16504981539634750768 downstream conformations at residue 84 and found 3448227 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 17475862806672103172 downstream conformations at residue 100 and found 3205628 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 11650575204448036768 downstream conformations at residue 108 and found 4361306 hits.
+protocols.match.downstream.ClassicMatchAlgorithm: Finished round 1 with 25763794 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 15534100272597515824 downstream conformations at residue 13 and found 17 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 9708812670373446760 downstream conformations at residue 15 and found 7 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 2912643801112033272 downstream conformations at residue 17 and found 368 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 9708812670373446760 downstream conformations at residue 23 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 2912643801112033272 downstream conformations at residue 27 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 15534100272597515824 downstream conformations at residue 39 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 15534100272597515824 downstream conformations at residue 41 and found 15 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 15534100272597515824 downstream conformations at residue 51 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 9708812670373446760 downstream conformations at residue 67 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 2912643801112033272 downstream conformations at residue 69 and found 708 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 2912643801112033272 downstream conformations at residue 71 and found 1573 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 9708812670373446760 downstream conformations at residue 84 and found 2 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 9708812670373446760 downstream conformations at residue 98 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 15534100272597515824 downstream conformations at residue 100 and found 560 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 2912643801112033272 downstream conformations at residue 102 and found 3180 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 9708812670373446760 downstream conformations at residue 106 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 8737931403336102336 downstream conformations at residue 108 and found 22 hits.
+protocols.match.downstream.ClassicMatchAlgorithm: Finished round 2 with 6452 hits.
+protocols.match.downstream.ClassicMatchAlgorithm: Erased 25486475 round 1 hits with 277319 hits remaining.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 15534100272597515824 downstream conformations at residue 13 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 9708812670373446760 downstream conformations at residue 15 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 2912643801112033272 downstream conformations at residue 17 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 9708812670373446760 downstream conformations at residue 23 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 2912643801112033272 downstream conformations at residue 27 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 15534100272597515824 downstream conformations at residue 39 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 15534100272597515824 downstream conformations at residue 41 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 15534100272597515824 downstream conformations at residue 51 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 9708812670373446760 downstream conformations at residue 67 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 2912643801112033272 downstream conformations at residue 69 and found 449 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 2912643801112033272 downstream conformations at residue 71 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 9708812670373446760 downstream conformations at residue 84 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 9708812670373446760 downstream conformations at residue 98 and found 28 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 15534100272597515824 downstream conformations at residue 100 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 2912643801112033272 downstream conformations at residue 102 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 9708812670373446760 downstream conformations at residue 106 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 8737931403336102336 downstream conformations at residue 108 and found 0 hits.
+protocols.match.downstream.ClassicMatchAlgorithm: Finished round 3 with 477 hits.
+protocols.match.downstream.ClassicMatchAlgorithm: Erased 142220 round 1 hits with 135099 hits remaining.
+protocols.match.downstream.ClassicMatchAlgorithm: Erased 5849 round 2 hits with 603 hits remaining.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 3883525068149371396 downstream conformations at residue 13 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 17475862806672199212 downstream conformations at residue 15 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 3883525068149371396 downstream conformations at residue 17 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 1941762534074681288 downstream conformations at residue 23 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 11650575204448128888 downstream conformations at residue 27 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 4854406335186714980 downstream conformations at residue 39 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 16504981539634852688 downstream conformations at residue 41 and found 100 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 1941762534074681288 downstream conformations at residue 51 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 8737931403336095196 downstream conformations at residue 67 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 10679693937410782364 downstream conformations at residue 69 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 13592337738522818996 downstream conformations at residue 71 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 8737931403336095196 downstream conformations at residue 84 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 6796168869261405088 downstream conformations at residue 98 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 15534100272597509104 downstream conformations at residue 100 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 11650575204448128888 downstream conformations at residue 102 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 970881267037337704 downstream conformations at residue 106 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 9708812670373438780 downstream conformations at residue 108 and found 0 hits.
+protocols.match.downstream.ClassicMatchAlgorithm: Finished round 4 with 100 hits.
+protocols.match.downstream.ClassicMatchAlgorithm: Erased 134526 round 1 hits with 573 hits remaining.
+protocols.match.downstream.ClassicMatchAlgorithm: Erased 565 round 2 hits with 38 hits remaining.
+protocols.match.downstream.ClassicMatchAlgorithm: Erased 417 round 3 hits with 60 hits remaining.
+protocols.match.Matcher: Found 2 connected components in the hit neighbor graph in 0 seconds.
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 537 25 32 12
+protocols.match.Matcher: Processed 504 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 36 7 15 31
+protocols.match.Matcher: Processed 0 matches
+protocols.match.Matcher: Match enumeration statistics:  num_potential_matches: 1640;    all_lex_states 1670;   num_considered_muliple_origins 0;    num_non_up_only_incompatible 1136;    num_ds_hit_incompatible 0;    num_up_only_incompatible 0;    num_sent_to_proc 504
+protocols.match.Matcher: 0 empty uplists were observed.
+protocols.match.output.MatchProcessor: A total of 504 matches were processed.
+protocols.match.output.MatchProcessor: No matches failed any filter.
+protocols.match.MatcherMover: Matcher ran for 421 seconds, where finding hits took 420 seconds and processing the matches took 1 seconds. Matching was successful.
+protocols.match.MatcherMover: Incorporated match 1 into pose.
+protocols.rosetta_scripts.ParsedProtocol: =======================BEGIN FILTER =======================
+protocols.rosetta_scripts.ParsedProtocol: =======================END FILTER =======================
+protocols.rosetta_scripts.ParsedProtocol: setting status to success
+protocols.rosetta_scripts.ParsedProtocol.REPORT: ============Begin report for ==================
+protocols.rosetta_scripts.ParsedProtocol.REPORT: ============End report for ==================
+protocols.jd2.JobDistributor: matcher_inp_0337_0008_0001 reported success in 428 seconds
+protocols.jd2.JobDistributor: no more batches to process... 
+protocols.jd2.JobDistributor: 1 jobs considered, 1 jobs attempted in 428 seconds

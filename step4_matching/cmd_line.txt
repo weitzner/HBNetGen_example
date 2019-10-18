@@ -1,0 +1,1 @@
+Path/to/rosetta/bin/rosetta_scripts.static.linuxgccrelease @match.flags.txt -beta_nov16 -extra_res_fa LYM.params -parser:protocol matcher_xml_cst.xml -preserve_header true -s inp_0337_0008.pdb -extra_res_fa RA2_RS_rotlib.params -match:lig_name LG2 -out:prefix matcher_ -nstruct 1

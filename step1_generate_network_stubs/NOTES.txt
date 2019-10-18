@@ -1,0 +1,2 @@
+Executing command in cmd_line.txt produces base_stubs.pdb containing coordinates of residue stubs forming networked theozyme.
+Example output base_stubs.pdb contains small fraction of possible networks.

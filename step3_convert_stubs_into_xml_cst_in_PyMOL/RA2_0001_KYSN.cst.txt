@@ -1,0 +1,104 @@
+<MatcherConstraint>
+	<DownstreamResidue   atom1="NZ" atom2="CE" atom3="2HZ" name="LYS" />
+	<UpstreamResidue atom1="C12" atom2="C11" atom3="C13" name="LG2" />
+	<Combination>
+		<DistanceAB x0="1.4" xtol="0.1" k="80.0" periodicity="1" noSamples="0" />
+		<AngleA    x0="105.8" xtol="5.0" k="10.0" periodicity="360" noSamples="0" />
+		<AngleB    x0="118.7" xtol="5.0" k="10.0" periodicity="360" noSamples="0" />
+		<TorsionA  x0="-115.2" xtol="10.0" k="10.0" periodicity="360" noSamples="0" />
+		<TorsionAB x0="67.8" xtol="10.0" k="10.0" periodicity="360" noSamples="0" />
+		<TorsionB  x0="-121.2" xtol="10.0" k="10.0" periodicity="360" noSamples="0" />
+	</Combination>
+</MatcherConstraint>
+<MatcherConstraint>
+	<DownstreamResidue   atom1="OH" atom2="CZ" atom3="HH" name="TYR" />
+	<UpstreamResidue atom1="C12" atom2="C11" atom3="C13" name="LG2" />
+	<Combination>
+		<DistanceAB x0="3.6" xtol="0.2" k="80.0" periodicity="0" noSamples="0" />
+		<AngleA    x0="73.7" xtol="5.0" k="10.0" periodicity="360" noSamples="0" />
+		<AngleB    x0="135.0" xtol="5.0" k="10.0" periodicity="360" noSamples="0" />
+		<TorsionA  x0="100.7" xtol="10.0" k="10.0" periodicity="360" noSamples="0" />
+		<TorsionAB x0="-51.3" xtol="10.0" k="10.0" periodicity="360" noSamples="0" />
+		<TorsionB  x0="-112.6" xtol="10.0" k="10.0" periodicity="360" noSamples="0" />
+	</Combination>
+</MatcherConstraint>
+<MatcherConstraint>
+	<DownstreamResidue   atom1="OG" atom2="CB" atom3="HG" name="SER" />
+	<UpstreamResidue atom1="C12" atom2="C11" atom3="C13" name="LG2" />
+	<Combination>
+		<DistanceAB x0="3.7" xtol="0.2" k="80.0" periodicity="0" noSamples="0" />
+		<AngleA    x0="127.6" xtol="5.0" k="10.0" periodicity="360" noSamples="0" />
+		<AngleB    x0="120.0" xtol="5.0" k="10.0" periodicity="360" noSamples="0" />
+		<TorsionA  x0="89.5" xtol="10.0" k="10.0" periodicity="360" noSamples="0" />
+		<TorsionAB x0="-85.7" xtol="10.0" k="10.0" periodicity="360" noSamples="0" />
+		<TorsionB  x0="-1.5" xtol="10.0" k="10.0" periodicity="360" noSamples="0" />
+	</Combination>
+	<Combination>
+		<DistanceAB x0="3.7" xtol="0.2" k="80.0" periodicity="0" noSamples="0" />
+		<AngleA    x0="127.6" xtol="5.0" k="10.0" periodicity="360" noSamples="0" />
+		<AngleB    x0="118.2" xtol="5.0" k="10.0" periodicity="360" noSamples="0" />
+		<TorsionA  x0="89.5" xtol="10.0" k="10.0" periodicity="360" noSamples="0" />
+		<TorsionAB x0="-129.0" xtol="10.0" k="10.0" periodicity="360" noSamples="0" />
+		<TorsionB  x0="6.5" xtol="10.0" k="10.0" periodicity="360" noSamples="0" />
+	</Combination>
+	<Combination>
+		<DistanceAB x0="3.7" xtol="0.2" k="80.0" periodicity="0" noSamples="0" />
+		<AngleA    x0="127.6" xtol="5.0" k="10.0" periodicity="360" noSamples="0" />
+		<AngleB    x0="112.2" xtol="5.0" k="10.0" periodicity="360" noSamples="0" />
+		<TorsionA  x0="89.5" xtol="10.0" k="10.0" periodicity="360" noSamples="0" />
+		<TorsionAB x0="-170.3" xtol="10.0" k="10.0" periodicity="360" noSamples="0" />
+		<TorsionB  x0="11.0" xtol="10.0" k="10.0" periodicity="360" noSamples="0" />
+	</Combination>
+</MatcherConstraint>
+<MatcherConstraint>
+	<DownstreamResidue   atom1="OD1" atom2="CG" atom3="1HD2" name="ASN" />
+	<UpstreamResidue atom1="C12" atom2="C11" atom3="C13" name="LG2" />
+	<Combination>
+		<DistanceAB x0="3.3" xtol="0.2" k="80.0" periodicity="0" noSamples="0" />
+		<AngleA    x0="105.6" xtol="5.0" k="10.0" periodicity="360" noSamples="0" />
+		<AngleB    x0="118.5" xtol="5.0" k="10.0" periodicity="360" noSamples="0" />
+		<TorsionA  x0="-174.8" xtol="10.0" k="10.0" periodicity="360" noSamples="0" />
+		<TorsionAB x0="-113.4" xtol="10.0" k="10.0" periodicity="360" noSamples="0" />
+		<TorsionB  x0="0.1" xtol="10.0" k="10.0" periodicity="360" noSamples="0" />
+	</Combination>
+	<Combination>
+		<DistanceAB x0="3.3" xtol="0.2" k="80.0" periodicity="0" noSamples="0" />
+		<AngleA    x0="105.6" xtol="5.0" k="10.0" periodicity="360" noSamples="0" />
+		<AngleB    x0="112.3" xtol="5.0" k="10.0" periodicity="360" noSamples="0" />
+		<TorsionA  x0="-174.8" xtol="10.0" k="10.0" periodicity="360" noSamples="0" />
+		<TorsionAB x0="-139.1" xtol="10.0" k="10.0" periodicity="360" noSamples="0" />
+		<TorsionB  x0="29.4" xtol="10.0" k="10.0" periodicity="360" noSamples="0" />
+	</Combination>
+	<Combination>
+		<DistanceAB x0="3.3" xtol="0.2" k="80.0" periodicity="0" noSamples="0" />
+		<AngleA    x0="105.6" xtol="5.0" k="10.0" periodicity="360" noSamples="0" />
+		<AngleB    x0="114.8" xtol="5.0" k="10.0" periodicity="360" noSamples="0" />
+		<TorsionA  x0="-174.8" xtol="10.0" k="10.0" periodicity="360" noSamples="0" />
+		<TorsionAB x0="-111.1" xtol="10.0" k="10.0" periodicity="360" noSamples="0" />
+		<TorsionB  x0="-30.6" xtol="10.0" k="10.0" periodicity="360" noSamples="0" />
+	</Combination>
+	<Combination>
+		<DistanceAB x0="3.3" xtol="0.2" k="80.0" periodicity="0" noSamples="0" />
+		<AngleA    x0="105.6" xtol="5.0" k="10.0" periodicity="360" noSamples="0" />
+		<AngleB    x0="121.2" xtol="5.0" k="10.0" periodicity="360" noSamples="0" />
+		<TorsionA  x0="-174.8" xtol="10.0" k="10.0" periodicity="360" noSamples="0" />
+		<TorsionAB x0="-137.3" xtol="10.0" k="10.0" periodicity="360" noSamples="0" />
+		<TorsionB  x0="0.0" xtol="10.0" k="10.0" periodicity="360" noSamples="0" />
+	</Combination>
+	<Combination>
+		<DistanceAB x0="3.3" xtol="0.2" k="80.0" periodicity="0" noSamples="0" />
+		<AngleA    x0="105.6" xtol="5.0" k="10.0" periodicity="360" noSamples="0" />
+		<AngleB    x0="114.7" xtol="5.0" k="10.0" periodicity="360" noSamples="0" />
+		<TorsionA  x0="-174.8" xtol="10.0" k="10.0" periodicity="360" noSamples="0" />
+		<TorsionAB x0="-163.5" xtol="10.0" k="10.0" periodicity="360" noSamples="0" />
+		<TorsionB  x0="30.7" xtol="10.0" k="10.0" periodicity="360" noSamples="0" />
+	</Combination>
+	<Combination>
+		<DistanceAB x0="3.3" xtol="0.2" k="80.0" periodicity="0" noSamples="0" />
+		<AngleA    x0="105.6" xtol="5.0" k="10.0" periodicity="360" noSamples="0" />
+		<AngleB    x0="98.4" xtol="5.0" k="10.0" periodicity="360" noSamples="0" />
+		<TorsionA  x0="-174.8" xtol="10.0" k="10.0" periodicity="360" noSamples="0" />
+		<TorsionAB x0="178.1" xtol="10.0" k="10.0" periodicity="360" noSamples="0" />
+		<TorsionB  x0="54.2" xtol="10.0" k="10.0" periodicity="360" noSamples="0" />
+	</Combination>
+</MatcherConstraint>

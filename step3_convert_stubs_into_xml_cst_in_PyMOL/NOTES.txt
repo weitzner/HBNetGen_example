@@ -1,0 +1,1 @@
+Executing "enzdes_constraints_writer_xml_format.py" in PyMOL generates xml formatted matcher constraint files for all combinations of allowed side chains. 

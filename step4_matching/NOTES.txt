@@ -1,0 +1,2 @@
+Executing command in "cmd_line.txt" will setup and run example matching protocol on "inp_0337_0008.pdb" using constraints in "RA2_RS_0000_KYYQ.cst.txt".
+RosettaScript protocol is in "matcher_xml_cst.xml". Matcher settings are in "match.flags.txt". Additional files specific for the run are "LYM.params" and "RA2_RS_rotlib.params" (complemented by "RA2_RS_0001.rotlib.pdb") containing geometry information for deprotonated lysine residue and ligand.

@@ -1,0 +1,28 @@
+-polar_network_generation
+	-interaction_map 1:2 2:3 #needs to be indented since defines namespace
+-HB_anchor_atoms_and_AAs 1,2HZ:N 1,O3:S 1,H4:Y
+-HB_dist_min 1.8
+-HB_dist_max 2.2
+-HB_dist_step 0.2
+-inter_res_HB_dist_min 1.8
+-inter_res_HB_dist_max 2.6
+-sec_HB_anchor_atoms_and_AAs
+-sec_HB_dist_min 2.2
+-sec_HB_dist_max 2.2
+-sec_HB_dist_step 0.2
+-sample_AAs_at_chi_protons false #activating this options seems to cause explosion of conformations and OUT_OF_MEM even at 20G/run
+-catalytic_residue_is_at 1,C11:K
+-proton_sampling_level 2
+-sidechain_chi_sampling_level 2
+-KR_chi_sampling_level 1
+-sample_catalytic_residue_terminal_chi false
+-treat_intraligand_HB_as_link false
+-clash_cutoff_distances 2.6:1.7:2.2:2.4:2.6:2.8:3.2:3.4
+-output_networks_for_docking_later false
+
+#############( Newer flags )########################
+-include_ligand_polar_anchor_atoms_in_network false #affects what network topologies become possible if anchors can participate in forming binary links
+-include_ligand_in_output true
+
+#############( Even more newer flags )##############
+-output_dock_stubs_in_binary_format  false

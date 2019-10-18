@@ -1,0 +1,6 @@
+
+for f in RA2_????_????.cst.txt
+	do
+		sed -i "s/LYS/LYM/g" ${f}
+		sed -i "s/1HZ/2HZ/g" ${f}
+	done

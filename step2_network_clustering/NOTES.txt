@@ -1,0 +1,1 @@
+Executing restructure_networks.py with base_stubs.pdb from "step1" in the directory creates base_stubs sub-directory containing two pdb files corresponding to clusters of networks with similar positions of the "shuttle" Tyr residue.

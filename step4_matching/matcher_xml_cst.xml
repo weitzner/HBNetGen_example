@@ -1,0 +1,52 @@
+<ROSETTASCRIPTS>
+bash>>> ~weitzner/hbscan/rosetta_scripts.static.linuxgccrelease @../../match.flags.txt -parser:protocol ../../xmls/matcher_xml_cst.xml -parser:script_vars xml_style_csts="xml_csts" -s "input_pdb"
+	<SCOREFXNS>
+		<ScoreFunction name="FULL_hard" weights="beta_nov16_cst.wts">
+			<Reweight scoretype="atom_pair_constraint"     weight="1.0" />
+			<Reweight scoretype="angle_constraint"         weight="1.0" />
+			<Reweight scoretype="dihedral_constraint"      weight="1.0" />
+			<Reweight scoretype="coordinate_constraint"    weight="1.0" />
+			<Reweight scoretype="aa_composition"           weight="1.0" />
+		</ScoreFunction>
+		
+	</SCOREFXNS>
+	
+	<RESIDUE_SELECTORS>
+		<ResidueName name="ligand" residue_names="LG2" residue_name3="LG2" />
+		<ResidueName name="GP" residue_names="GLY,PRO" />
+			<Not name="not_GP" selector="GP"/>
+		<Layer name="boundary" select_boundary="True" use_sidechain_neighbors="True" core_cutoff="4.9" surface_cutoff="2.3" /> looks like 30 and 40 cutoffs are a little more sensible, than original 20-40
+			<And name="boundary_and_not_GP" selectors="boundary,not_GP" />
+		<Index name="nuc" resnums="15,23,25,43,53,55,69,84,100,108" />
+			<And name="nuc_and_not_GP" selectors="nuc,not_GP" />
+		<Index name="sht" resnums="13,15,17,23,27,39,41,51,67,69,71,84,98,100,102,106,108" />
+			<And name="sht_and_not_GP" selectors="sht,not_GP" />
+		<Index name="sup" resnums="13,15,17,23,27,39,41,51,67,69,71,84,98,100,102,106,108" />
+			<And name="sup_and_not_GP" selectors="sup,not_GP" />
+		<Index name="brd" resnums="13,15,17,23,27,39,41,51,67,69,71,84,98,100,102,106,108" />
+			<And name="brd_and_not_GP" selectors="brd,not_GP" />
+			
+	</RESIDUE_SELECTORS>
+	
+	<TASKOPERATIONS>
+	    <InitializeFromCommandline name="init"/>
+	</TASKOPERATIONS>
+	
+	<MOVERS>
+    	<MatcherMover name="matcher" residues_for_geomcsts="nuc,sht,sup,brd" >
+    		<xi:include href="RA2_RS_0000_KYYQ.cst.txt" prevent_recursion="True"/>
+    	</MatcherMover>
+	</MOVERS>
+	
+	<FILTERS>
+
+	</FILTERS>
+	
+	<PROTOCOLS>
+		<Add mover="matcher" />
+	</PROTOCOLS>
+	
+	<OUTPUT scorefxn="FULL_hard"/>
+	
+
+</ROSETTASCRIPTS>
